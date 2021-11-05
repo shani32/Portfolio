@@ -1,0 +1,456 @@
+:root{
+    --primary-color:rgba(13,110,130,0.75);
+    --secondary-color:rgba(229,148,0,0.5);
+    --dark-color:rgba(24,39,51,0.85);
+    --light-color:rgba(232, 237, 243, 0.877);
+    }
+    
+    *{
+        margin: 0;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+.header-container{
+    height: 100vh;
+    width: 100%;
+    background:url(https://png.pngtree.com/thumb_back/fh260/background/20200731/pngtree-blue-carbon-background-with-sport-style-and-golden-light-image_371487.jpg) no-repeat center center/cover ;     
+    
+}
+.logo{
+color: gold;
+font-size: 2rem;
+letter-spacing: 1px;
+cursor: pointer;
+}
+
+.nav-bar{
+width: 100vw;    
+display:flex;
+align-items: center;
+justify-content: space-between;
+padding: 2rem;
+position: fixed;
+
+
+
+}
+.nav-bar ul li{
+list-style: none;
+display: inline-block;
+padding: 10px 15px;
+margin-top: 8px;
+/* position: fixed; */
+
+}
+.nav-bar ul li a{
+color: gold;
+text-decoration: none;
+text-transform: capitalize;
+font-weight: bold;
+font-size: 1.4rem;
+
+
+}
+.nav-bar ul li a:hover{
+color: white;
+transition: 2s;
+
+}
+.btn{
+background-color: white;
+font-size: 1.5rem;
+text-decoration: none;
+border: 2px solid transparent;
+font-weight: bold;
+padding: 10px 25px;
+border-radius: 30px;
+transition: transform 0.4s;
+}
+.btn:hover{
+transform: scale(1.2);
+}
+.profile{
+display: flex;
+height: 80vh;
+width: 100vw;
+
+}
+.profile-container .profile-h{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+line-height: 1.8rem;
+padding: 1rem 0;
+/* border: springgreen 2px solid; */
+width: 100vw;
+height: 20vh;
+margin-left: 150px;
+margin-top: 230px;
+}
+.profile-h h1{
+font-size: 40px;
+color: white;
+/* display: flex;
+justify-content: center;
+align-items: center; */
+
+}
+.profile-h h2{
+font-size: 35px;
+color: gold;
+}
+.profile-container .profile-text{
+color: gold;
+font-size: 1.5rem;
+margin-left: 50px;
+}
+figure img{
+display: flex;
+width: 400px;
+height: 500px;
+border-radius: 50%;
+margin-left: 1100px;
+margin-top: -200px;
+border: 3px white solid;  
+animation: myanimate 6s linear 1s;
+/* animation-timing-function: step-start; */
+
+
+}
+@keyframes myanimate {
+                0%{
+                    transform: scale(0);
+              }
+                100%{
+                    transform: scale(1);
+            
+            }
+        }
+
+        .card:hover .card-content{
+            transform: rotatey(180deg);
+            transform-style: preserve-3d;
+            }
+            .card{
+                width:400px;
+            
+            }
+             .card-content{
+                position:relative;
+                text-align: center;
+                transition: transform 3s;
+              
+            
+            }
+            .card-front,
+            .card-back{
+                position: absolute;
+                 top: 0;
+                 right: 0; 
+                 bottom:0;  
+                 left: 0; 
+                 color: white;
+                 backface-visibility: hidden;
+                 
+            }
+            .card-front{
+                background: gold;
+                transform: rotatey(180deg);
+                
+            }
+    
+    /* .profile .btn {
+        margin-top: 300px;
+        margin-left: 110px;
+    } */
+#about-me{
+background-image:#aaac34; 
+color: var(--primary-color);
+height: 100vh;
+width:100%;
+background-repeat: no-repeat;
+background-size: cover;
+z-index: 1;
+
+    }
+    .about{
+        height: 100vh;
+        width: 100%;
+        padding: 10px 0px;
+        background: #191919;
+
+
+    }
+    .about img{
+        
+        height: auto;
+        width: 500px;
+        margin-top: 100px;
+
+    }
+    .about-text{
+        width: 550px;
+        color: rgb(65, 97, 201);
+        margin-left: 5rem;
+        text-align: center;
+        
+    }
+    .main{
+        width: 1100px;
+        max-width: 95%;
+        margin: 0px auto;
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .about-text h2{
+        color: white;
+        font-size: 75px;
+        margin-bottom: 20px;
+    }
+    .about-text h5{
+        color: white;
+        font-size: 3rem;
+        color: gold;
+        letter-spacing: 2px;
+        margin-bottom: 25px;
+    }
+    .about-text p{
+        font-size: 1.5rem;
+        color: white;
+        margin-bottom: 40px;
+        line-height: 2.2rem;
+        
+    }
+    .about-text button{
+        display: inline-block;
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        display: inline-block;
+        padding: 1rem 6rem;
+        border-radius: 1.5rem;        
+        cursor: pointer;
+        order: rgba(206, 241, 8, 0.781) 4px solid;
+
+    }
+    .about-text button a{
+        text-decoration: none;
+        color: black;
+    }
+
+/* skills-page */
+#skills-page{
+        /* background-image:url(/cover3.jpg); */
+        color: var(--primary-color);
+        height: 100vh;
+        /* width: 100vw;*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: gold;
+     }   
+        .skills-container{
+            width: 100%;
+            height: 100%;
+            
+           
+        }
+        
+    .skills{
+        height: 600px;
+        width: 85%;
+        background: #ffffff;
+        padding: 50px 100px 0px 100px;
+        /* margin-left: 400px; */
+        line-height: 2.5rem;
+       border: 1px black solid;
+       /* text-align: center; */
+       display: flex;
+       justify-content: center;
+       align-items: center;   
+        
+    }
+    .skills-text p:nth-child(1){
+        font-weight: bold;
+        font-size: 70px;
+        padding: 30px 50px;
+
+    }
+    .skills-text p:nth-child(2){
+        font-weight: bold;
+        font-size: 40px;
+        padding: 30px;
+        
+    }
+    .skills-text p:nth-child(3){
+        font-weight: bold;
+        font-size: 30px;
+        padding: 30px;
+
+        
+    }
+    .skills-text{
+        width: 500px;
+        margin: 50px;
+        text-align: left;
+    }
+    .box-1, .box-2, .box-3{
+        width: 300px;
+        height: 320px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 2px 2px 12px rgb(65, 97, 201);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .box-container{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 100px;
+        
+        
+
+    }
+    .box-1 span,
+    .box-2 span,
+    .box-3 span{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    } 
+    
+    .box-2:nth-child(2){
+    
+        color: white;
+        font-size: 24px;
+    }
+    .box-1:nth-child(1),
+    .box-3:nth-child(3){
+
+        font-size: 24px;
+    }
+
+
+    .box-1:nth-child(3),
+    .box-2:nth-child(3),
+    .box-3:nth-child(3){
+        text-align: center;
+        width: 200px;
+        margin: 0 10px 20px 0;
+
+    }
+    .box-1 button,
+    .box-2 button,
+    .box-3 button{
+        width: 100px;
+        height: 30px;
+        outline: none;
+        border: 1px solid rgb(65, 97, 201);
+        border-radius: 7px;
+        background-color: white;
+        margin-top: 10px;
+
+    }
+    .box-1 button:hover,
+    .box-2 button:hover,
+    .box-3 button:hover{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    }
+
+   
+
+        /* #skills-page:after{
+        content: '';
+        position: absolute;
+        background-image: url('/cover3.jpg') no-repeat center center/cover ;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;  
+        opacity: 0.5;
+        
+        }  */
+
+        #contact-page{
+            background-image: url('https://image.freepik.com/free-vector/dark-paper-layers-wallpaper-with-golden-details_23-2148403401.jpg');
+            
+            height: 100vh;
+            opacity: 0.8;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            
+        } 
+        
+            body{
+                margin: 0;
+                padding: 0;
+    
+            }
+            .form-profile{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                /* border: 2px solid black; */
+                width: 100%;
+                height: 100%;
+                /* top: 50%;
+                left: 50%; */
+                transform: translate(-50px, -50px);
+    
+            }
+            fieldset{
+                font-size: 2rem;
+                /* border: 3px solid black; */
+                padding: 1.5rem;
+                text-align: center;
+                color: white;
+            }
+    
+            .form-profile button{
+                display: inline-block;
+                padding: 1rem 6rem;
+                border-radius: 1.5rem;
+                background: white;
+                cursor: pointer;
+                border: rgba(206, 241, 8, 0.781) 4px solid;
+            }
+            .form-profile input[type = "text"], .form-profile input[type = "email"] {
+                border: 0;
+                background: none;
+                display: block;
+                margin: auto;
+                text-align: center;
+                outline: none;
+                border-radius: 1.5rem;
+                color: white;
+                border: 4px solid #3498db;
+                transition: 0.25s;
+                width: 15rem;
+                height: 35px;
+    
+            }
+          
+            .form-profile input[type = "text"]:focus, .form-profile input[type = "email"]:focus{
+                width: 20rem;
+                height: 3rem;
+                border-color: rgba(206, 241, 8, 0.781);
+            }
+            
+            textarea{
+                margin-top: 1rem;
+            }
+
